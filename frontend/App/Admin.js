@@ -26,7 +26,7 @@ class AdminContainer extends Component {
       );
     }
 
-    if (user.role === 'admin') {
+    // if (user.role === 'admin') {
       return (
         <div>
           <Helmet><title>ReForum | Admin</title></Helmet>
@@ -34,15 +34,15 @@ class AdminContainer extends Component {
           {this.props.children}
         </div>
       );
-    }
-    else {
-      return (
-        <div style={{ textAlign: 'center', marginTop: 20 }}>
-          We are cordially sorry that you are not allowed to view admin panel!<br />
-          Please go back to <Link to='/'>root</Link> page.
-        </div>
-      );
-    }
+    // }
+    // else {
+    //   return (
+    //     <div style={{ textAlign: 'center', marginTop: 20 }}>
+    //       We are cordially sorry that you are not allowed to view admin panel!<br />
+    //       Please go back to <Link to='/'>root</Link> page.
+    //     </div>
+    //   );
+    // }
 
     return (
       <div style={{ textAlign: 'center', marginTop: 20 }}>
